@@ -320,7 +320,7 @@ HTTP_PORT=80
 HTTPS_PORT=443
 
 # Home network auto port forwarding (disable on VPS/servers)
-UPNP_ENABLED=true
+UPNP_ENABLED=false
 EOF
 
     show_success "Конфигурация создана / Configuration created"
