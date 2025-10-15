@@ -210,7 +210,7 @@ sudo systemctl disable pipe        # Отключить автозапуск / D
 
 # Логи / Logs
 sudo journalctl -u pipe -f         # Логи в реальном времени / Real-time logs
-sudo journalctl -u pipe --tail 100 # Последние 100 строк / Last 100 lines
+sudo journalctl -u pipe -n 100     # Последние 100 строк / Last 100 lines
 ```
 
 ---
@@ -294,7 +294,7 @@ curl http://localhost:9090/metrics
 sudo journalctl -u pipe -f
 
 # Последние 100 строк логов
-sudo journalctl -u pipe --tail 100
+sudo journalctl -u pipe -n 100
 
 # Проверка статуса сервиса
 sudo systemctl status pipe
@@ -358,5 +358,6 @@ CryptoCompass - your guide in the world of cryptocurrencies. We create simple an
 [![GitHub](https://img.shields.io/badge/GitHub-pipe--node-blue?style=flat-square&logo=github)](https://github.com/st567/pipe-node)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-1.0.0-orange?style=flat-square)](https://github.com/st567/pipe-node/releases)
+
 
 

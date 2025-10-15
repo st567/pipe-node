@@ -407,7 +407,7 @@ view_logs() {
     if is_node_running; then
         show_info "📋 Логи Pipe Network Node / Pipe Network Node Logs:"
         show_yellow "═══════════════════════════════════════════════════════════════"
-        sudo journalctl -u pipe --tail 100 --no-pager
+        sudo journalctl -u pipe -n 100 --no-pager
         show_yellow "═══════════════════════════════════════════════════════════════"
         echo ""
         show_info "Для просмотра логов в реальном времени используйте: / For real-time log viewing use:"
@@ -488,6 +488,7 @@ show_help_commands() {
     show_cyan "• sudo systemctl stop pipe            # Остановка ноды / Stop node"
     show_cyan "• sudo systemctl restart pipe         # Перезапуск ноды / Restart node"
     show_cyan "• sudo journalctl -u pipe -f          # Логи в реальном времени / Real-time logs"
+    show_cyan "• sudo journalctl -u pipe -n 100      # Последние 100 строк / Last 100 lines"
     echo ""
     show_white "Команды Pipe Network / Pipe Network commands:"
     show_cyan "• cd /opt/pipe && ./pop status        # Статус ноды / Node status"
