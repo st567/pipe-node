@@ -15,6 +15,8 @@ bash <(curl -s https://raw.githubusercontent.com/st567/pipe-node/master/pipe_nod
 
 ## 💻 Требования к ноде / Node Requirements
 
+### Базовые требования / Basic Requirements
+
 | Компонент / Component | Требование / Requirement |
 |----------------------|-------------------------|
 | **CPU** | 2 vCPU |
@@ -23,12 +25,158 @@ bash <(curl -s https://raw.githubusercontent.com/st567/pipe-node/master/pipe_nod
 | **Пропускная способность / Bandwidth** | 100Mbps |
 | **ОС / OS** | Ubuntu 24.04+, Debian 11+ |
 
+### Рекомендуемые требования для PoP Node Operators / Recommended Requirements for PoP Node Operators
+
+| Компонент / Component | Рекомендуемое требование / Recommended Requirement |
+|----------------------|---------------------------------------------------|
+| **ОС / OS** | Linux operating system |
+| **RAM** | Минимум 16GB (рекомендуется 32GB+ для продакшена) / Minimum 16GB (32GB+ recommended for production) |
+| **Диск / Disk** | 100GB+ SSD storage |
+| **Сеть / Network** | 1Gbps+ network connection |
+| **Подключение / Connectivity** | 24/7 internet connectivity |
+
 ### Открытые порты / Open Ports
 
 | Порт / Port | Протокол / Protocol | Назначение / Purpose |
 |-------------|-------------------|---------------------|
 | 80 | TCP | HTTP |
 | 443 | TCP | HTTPS |
+
+---
+
+## 🎯 Quality Multiplier - Система бонусов / Bonus System
+
+### Что такое Quality Multiplier? / What is Quality Multiplier?
+
+Quality Multiplier - это система бонусов, которая увеличивает ваши доходы в зависимости от качества работы ноды. Множитель варьируется от 0.7x до 1.5x от базового дохода.
+
+Quality Multiplier is a performance bonus that adjusts your earnings based on how well your node runs. It ranges from 0.7x to 1.5x your base earnings.
+
+### Уровни производительности / Performance Tiers
+
+| Уровень / Tier | Множитель / Multiplier | Ваш доход / Your Earnings |
+|----------------|----------------------|-------------------------|
+| Premium 🌟 | 1.5x | +50% бонус / +50% bonus |
+| Standard ✅ | 1.0x | Базовый тариф / Base rate |
+| Basic ⚠️ | 0.85x | -15% штраф / -15% penalty |
+| Poor ❌ | 0.7x | -30% штраф / -30% penalty |
+
+### Пример: Обслуживание 1 ТБ трафика / Example: Serving 1 TB of Bandwidth
+
+| Ваш уровень / Your Tier | Вы зарабатываете / You Earn |
+|------------------------|---------------------------|
+| Premium (1.5x) | $0.375 |
+| Standard (1.0x) | $0.25 |
+| Basic (0.85x) | $0.2125 |
+| Poor (0.7x) | $0.175 |
+
+### Факторы, влияющие на оценку / What Affects Your Score?
+
+Ваша оценка качества основана на четырех ключевых факторах:
+
+Your quality score is based on four key factors:
+
+#### 1. Время работы / Uptime (35% - самый важный фактор)
+- **Цель / Goal:** Работать онлайн 98%+ времени / Stay online 98%+ of the time
+- Система проверяет ноду каждые 30 минут / System checks your node every 30 minutes
+
+#### 2. Скорость / Speed (25%)
+- **Цель / Goal:** Отвечать менее чем за 100мс / Respond in under 100ms
+- Как быстро ваша нода отвечает на запросы / How fast your node responds to requests
+
+#### 3. Надежность / Reliability (25%)
+- **Цель / Goal:** Менее 0.1% ошибок / Less than 0.1% error rate
+- Как часто нода успешно обслуживает контент без ошибок / How often your node successfully serves content without errors
+
+#### 4. Эффективность / Efficiency (15%)
+- **Цель / Goal:** 80%+ кэш-хит / 80%+ cache hit rate
+- Насколько хорошо нода использует ресурсы и кэширует контент / How well your node uses its resources and caches content
+
+### Как достичь Premium уровня (1.5x) / How to Reach Premium Tier (1.5x)
+
+#### Приоритетные действия / Priority Actions:
+
+1. **Держите ноду онлайн / Keep Your Node Online**
+   - Настройте автоперезапуск при сбоях / Set up auto-restart if your node crashes
+   - Обеспечьте стабильный интернет и питание / Ensure stable internet and power
+   - **Цель / Target:** Менее 15 минут простоя в день / Less than 15 minutes downtime per day
+
+2. **Используйте быстрое хранилище / Use Fast Storage**
+   - SSD хранилище настоятельно рекомендуется / SSD storage is strongly recommended over HDD
+   - Выделите 4-8 ГБ RAM для кэширования / Allocate 4-8 GB RAM for caching
+   - Убедитесь в достаточном свободном месте на диске / Ensure you have enough free disk space
+
+3. **Минимизируйте ошибки / Minimize Errors**
+   - Мониторьте логи ноды на предмет проблем / Monitor your node logs for issues
+   - Держите ПО ноды обновленным / Keep your node software updated
+   - Быстро исправляйте проблемы конфигурации / Fix any configuration problems quickly
+
+4. **Оптимизируйте настройки / Optimize Your Setup**
+   - Не перегружайте сервер / Don't overload your server
+   - Разместите ноду в хорошем сетевом расположении / Place your node in a good network location
+   - Настройте адекватное кэш-хранилище / Configure adequate cache storage
+
+### Whitelist Bonus = Дополнительный 2x множитель! 🚀
+
+Нахождение в whitelist кошельков дает вам 2x бонус, который складывается с множителем качества:
+
+Being on the wallet whitelist gives you a 2x bonus that stacks with your quality multiplier:
+
+**Ваш общий множитель = Quality Multiplier × Whitelist Bonus (2x)**
+
+**Your Total Multiplier = Quality Multiplier × Whitelist Bonus (2x)**
+
+#### Сравнение доходов / Earnings Comparison
+
+| Уровень качества / Quality Tier | Без Whitelist | С Whitelist | Разница бонуса / Bonus Difference |
+|--------------------------------|---------------|-------------|----------------------------------|
+| Premium (1.5x) | $0.375/TB | $0.75/TB | +$0.375/TB |
+| Standard (1.0x) | $0.25/TB | $0.50/TB | +$0.25/TB |
+| Basic (0.85x) | $0.2125/TB | $0.425/TB | +$0.2125/TB |
+| Poor (0.7x) | $0.175/TB | $0.35/TB | +$0.175/TB |
+
+#### Пример: Если вы Premium уровень И в whitelist / Example: If you're Premium tier AND whitelisted:
+
+- Базовый тариф / Base rate: $0.25/TB
+- × 1.5 (Premium качество / quality) = $0.375/TB
+- × 2.0 (Whitelist бонус / bonus) = $0.75/TB (3x базовый тариф / base rate!)
+
+💡 **Профессиональный совет / Pro Tip:** Даже нода с Poor производительностью с whitelist ($0.35/TB) зарабатывает больше, чем Standard нода без него ($0.25/TB)!
+
+### Проверка производительности / Checking Your Performance
+
+```bash
+# Проверка текущего множителя / Check current multiplier
+cd /opt/pipe && ./pop earnings
+```
+
+Ваша оценка качества обновляется каждые 1-4 часа на основе последних 24 часов работы.
+
+Your quality score updates every 1-4 hours based on your last 24 hours of performance.
+
+### Быстрые советы для успеха / Quick Tips for Success
+
+#### ✅ Делайте это / Do This:
+- Держите ноду работающей 24/7 / Keep your node running 24/7
+- Используйте SSD хранилище / Use SSD storage
+- Выделите достаточно RAM (рекомендуется 4-8 ГБ) / Allocate sufficient RAM (4-8 GB recommended)
+- Мониторьте логи на ошибки / Monitor your logs for errors
+- Обеспечьте стабильное интернет-соединение / Ensure stable internet connection
+
+#### ❌ Избегайте этого / Avoid This:
+- Частых перезапусков или простоев / Frequent restarts or downtime
+- Работы на перегруженном железе / Running on overloaded hardware
+- Игнорирования сообщений об ошибках / Ignoring error messages
+- Использования медленного HDD хранилища / Using slow HDD storage
+- Недостаточного места на диске для кэша / Insufficient disk space for cache
+
+### Ключевые факты / Key Facts:
+
+- Premium нода зарабатывает в 2.14 раза больше, чем Poor нода
+- Whitelisted нода зарабатывает в 2 раза больше, чем non-whitelisted нода
+- Комбинация: Premium + Whitelisted зарабатывает в 4.3 раза больше, чем Poor + Non-whitelisted!
+
+**Максимальный доход / Maximum Earnings:** Premium уровень + Whitelist = 3x базовый тариф ($0.75/TB)
 
 ---
 
