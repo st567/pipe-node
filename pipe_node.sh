@@ -447,31 +447,17 @@ change_solana_address() {
 
 # Show node status
 show_node_status() {
-    if is_node_running; then
-        show_success "$(get_text "node_running")"
-        echo ""
-        show_info "Статус сервиса / Service status:"
-        sudo systemctl status pipe --no-pager -l
-    else
-        show_error "$(get_text "node_stopped")"
-    fi
+    cd /opt/pipe && ./pop status
 }
 
 # Show earnings
 show_earnings() {
-    if is_node_running; then
-        show_info "Доходы ноды / Node earnings:"
-        cd /opt/pipe
-        sudo -u root ./pop earnings 2>/dev/null || show_warning "Команда earnings недоступна / Earnings command not available"
-    else
-        show_error "Нода не запущена / Node is not running"
-    fi
+    cd /opt/pipe && ./pop earnings
 }
 
 # Health check
 health_check() {
     if is_node_running; then
-        show_info "Проверка здоровья ноды / Node health check:"
         curl -s http://localhost:8081/health 2>/dev/null || show_warning "Health endpoint недоступен / Health endpoint not available"
     else
         show_error "Нода не запущена / Node is not running"
